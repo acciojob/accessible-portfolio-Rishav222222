@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <header>
+    <h1 role="heading">My Portfolio</h1>
+    <nav role="navigation">
+      <ul role="list">
+        <li role="listitem"><a href="#about">About</a></li>
+        <li role="listitem"><a href="#projects">Projects</a></li>
+        <li role="listitem"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img id="a" src="https://marketplace.canva.com/EAFf9pTh3kg/1/0/1131w/canva-black-and-white-simple-portfolio-cover-page-BRYRBdWQKVU.jpg" alt="Profile Picture" role="img">
+      <p>Hi, I'm John Doe, a web developer passionate about accessibility and inclusive design.</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul role="list">
+        <li role="listitem">Project 1</li>
+        <li role="listitem">Project 2</li>
+        <li role="listitem">Project 3</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach out to me via email: john@example.com</p>
+    </section>
+  </main>
 </body>
-
 </html>
